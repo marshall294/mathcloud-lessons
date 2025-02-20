@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long Division Notes and Diagrams</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 20px;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #4CAF50;
+        }
+        .example, .interactive {
+            background-color: #f0f8f5;
+            padding: 15px;
+            border-left: 4px solid #4CAF50;
+            margin-bottom: 20px;
+        }
+        .step {
+            margin: 10px 0;
+        }
+        .division-diagram {
+            font-family: monospace;
+            font-size: 18px;
+            white-space: pre;
+            background-color: #e7ffe6;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        input {
+            padding: 8px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #e7ffe6;
+            border-left: 4px solid #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Long Division - Step-by-Step with Diagrams</h1>
+    </header>
+
+    <div class="container">
+        <h2>Worked Example 1: Divide 425 by 5</h2>
+        <div class="example">
+            <div class="step">Step 1: Take the first two digits (42).</div>
+            <div class="step">Step 2: 5 goes into 42 eight times. Write down 8 as the first digit of the quotient.</div>
+            <div class="step">Step 3: Multiply 8 × 5 = 40. Subtract 40 from 42 to get 2.</div>
+            <div class="step">Step 4: Bring down the next digit (5) to make 25.</div>
+            <div class="step">Step 5: 5 goes into 25 five times. Write down 5 as the next digit of the quotient.</div>
+            <div class="step">Step 6: Multiply 5 × 5 = 25. Subtract to get 0. No digits left, so the division is complete.</div>
+            <div class="step">Answer: 425 ÷ 5 = 85</div>
+
+            <h3>Long Division Diagram:</h3>
+            <pre class="division-diagram">
+   85
+  -----
+5 | 425
+   -40
+   ----
+     25
+    -25
+    ----
+       0
+            </pre>
+        </div>
+<div class="worked-example">
+    <h3>Example 2: Divide 135 by 5</h3>
+    <div class="step">Step 1: Set up the division with 135 as the dividend and 5 as the divisor.</div>
+    <div class="step">Step 2: Divide 13 by 5. The quotient is 2 with a remainder of 3.</div>
+    <div class="step">Step 3: Bring down the next digit (5). Now divide 35 by 5.</div>
+    <div class="step">Step 4: 35 ÷ 5 = 7. The quotient is 27, and there is no remainder.</div>
+    <div class="step">Answer: 135 ÷ 5 = 27</div>
+            <h3>Long Division Diagram:</h3>
+            <pre class="division-diagram">
+         27
+       -------
+    5 | 135
+       -10
+        ----
+         35
+         -35
+        ----
+           0
+        </pre>
+    </div>
+
+<div class="worked-example">
+    <h3>Example 3: Divide 768 by 12</h3>
+    <div class="step">Step 1: Set up 768 as the dividend and 12 as the divisor.</div>
+    <div class="step">Step 2: Divide 76 by 12. The quotient is 6 with a remainder of 4.</div>
+    <div class="step">Step 3: Bring down the next digit (8). Now divide 48 by 12.</div>
+    <div class="step">Step 4: 48 ÷ 12 = 4. The final quotient is 64, and there is no remainder.</div>
+    <div class="step">Answer: 768 ÷ 12 = 64</div>
+            <h3>Long Division Diagram:</h3>
+            <pre class="division-diagram">
+         64
+       -------
+    12 | 768
+       -72
+        ----
+         48
+         -48
+        ----
+           0
+        </pre>
+    </div>
+
+<div class="worked-example">
+    <h3>Example 4: Divide 524 by 4</h3>
+    <div class="step">Step 1: Set up 524 as the dividend and 4 as the divisor.</div>
+    <div class="step">Step 2: Divide 5 by 4. The quotient is 1 with a remainder of 1.</div>
+    <div class="step">Step 3: Bring down the next digit (2). Divide 12 by 4. The quotient is 3.</div>
+    <div class="step">Step 4: Bring down the next digit (4). Divide 4 by 4. The quotient is 1.</div>
+    <div class="step">Answer: 524 ÷ 4 = 131</div>
+            <h3>Long Division Diagram:</h3>
+            <pre class="division-diagram">
+         131
+       -------
+     4 | 524
+        -4
+        ----
+         12
+        -12
+        ----
+          4
+         -4
+        ----
+           0
+        </pre>
+    </div>
+</div>
+
+
+        <h2>Interactive Long Division Practice</h2>
+        <div class="interactive">
+            <h3>Try Your Own Division</h3>
+            <label for="dividend">Enter Dividend:</label>
+            <input type="number" id="dividend" placeholder="Enter the number to be divided">
+            <label for="divisor">Enter Divisor:</label>
+            <input type="number" id="divisor" placeholder="Enter the divisor">
+            <button onclick="performDivision()">Calculate</button>
+            <div id="result" class="result" style="display: none;"></div>
+        </div>
+    </div>
+
+    <script>
+        function performDivision() {
+            const dividend = parseInt(document.getElementById('dividend').value);
+            const divisor = parseInt(document.getElementById('divisor').value);
+
+            if (isNaN(dividend) || isNaN(divisor) || divisor === 0) {
+                document.getElementById('result').style.display = "block";
+                document.getElementById('result').textContent = "Please enter valid numbers for both dividend and divisor.";
+                return;
+            }
+
+            const quotient = Math.floor(dividend / divisor);
+            const remainder = dividend % divisor;
+
+            let diagram = `   ${quotient}\n  -----\n${divisor} | ${dividend}\n`;
+            
+            let currentDividend = dividend;
+            let stepPosition = 0;
+
+            while (currentDividend >= divisor && stepPosition < String(dividend).length) {
+                const firstDigit = parseInt(String(currentDividend)[0]);
+                const subResult = Math.floor(firstDigit / divisor) * divisor;
+                diagram += `   -${subResult}\n   ----\n`;
+                stepPosition++;
+                currentDividend -= subResult;
+            }
+
+            document.getElementById('result').style.display = "block";
+            document.getElementById('result').innerHTML = `<strong>Result:</strong> ${dividend} ÷ ${divisor} = ${quotient} (Remainder: ${remainder})\n\n<pre>${diagram}</pre>`;
+        }
+    </script>
+</body>
+</html>
